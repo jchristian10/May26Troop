@@ -1,0 +1,22 @@
+﻿@model ShoppingList.Models.ProductsViewModel
+@using ShoppingList.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <h2>Name: @Model.FirstName @Model.LastName</h2> 
+</div>
+<div>
+    <ul>
+        @foreach(Product product in Model.Products)
+        {
+            <li>Name: @product.Name, Price: @product.Price</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <h2>Total: @Model.Total</h2>
+</div>

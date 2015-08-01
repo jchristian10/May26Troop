@@ -1,0 +1,13 @@
+﻿<h1>This is the start view message -> {{vm.message}}</h1>
+
+<input 
+       ng-model="vm.search" 
+       ng-model-options="{debounce:2000}" 
+       ng-change="vm.fetch()"
+       />
+
+<ul>
+    <li ng-repeat="item in vm.food">
+        {{item}}<!--/* - {{item.price|currency}}, {{item.dateCreated| date:'fullDate'}}-->
+    </li>
+</ul>

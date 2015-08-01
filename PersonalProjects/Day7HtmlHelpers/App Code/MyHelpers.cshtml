@@ -1,0 +1,11 @@
+﻿@helper FormatPrice(decimal Price)  //Custom Razor Helper
+{
+    if (Price < 0)
+    {
+        <b style="color:red">@Price.ToString("c")</b>
+    }
+    else
+    {
+        @Price.ToString("c")
+    }
+}

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="PetStore">
+<head>
+    <link href="css/main.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body ng-controller="PetsController as petList">
+<h2>Dogs</h2>
+    <ul>
+        <li ng-repeat="pet in petList.pets[0]">{{pet.name}}
+        <ul>
+            <li></li>
+        </ul>
+    </ul>
+<h2>Bunnies</h2>
+    <ul>
+        <li ng-repeat="pet in petList.pets[1]">{{pet.name}}</li>
+    </ul>
+    
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

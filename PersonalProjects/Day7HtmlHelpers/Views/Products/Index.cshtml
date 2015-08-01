@@ -1,0 +1,28 @@
+﻿@using Day7HtmlHelpers.Helpers
+@model Day7HtmlHelpers.Models.Product
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Scripts
+{
+    <script type="text/javascript">
+        alert("What up yo?");
+    </script>
+}
+
+
+
+<h2>Index</h2>
+
+<div>
+    @Html.LabelFor(m => m.Name, "Product Name")
+    @Html.TextBoxFor(m => m.Name)
+</div>
+
+
+
+@Html.Image("Http://laughingsquid.com/wp-conetent/uploads/space_needle_1.jpg")
+
+<input type="submit" value="Add Product" />
+

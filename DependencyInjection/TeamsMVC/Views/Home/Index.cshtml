@@ -1,0 +1,31 @@
+﻿@model TeamsMVC.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1>Baseball Players</h1>
+</div>
+<div class="row">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Player City</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var player in Model.Players)
+            {
+                <tr>
+                    <td>@player.PlayerName</td>
+                    <td>@player.TeamName</td>
+                    <td>@player.TeamCity</td>
+                </tr>
+            }
+                
+        </tbody>
+       
+    </table>
+</div>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MovieApp">
+<head>
+    <title>Movies</title>
+
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+
+</head>
+
+<body ng-controller="MovieListController as movieList" ng-cloak>   <!--Angular Directive!   //the AS allows you to 'talk to' the MovieListControler as movieList-->
+    <h2>Movies</h2>
+    <ul>
+        <li ng-repeat="movie in movieList.movies">{{movie.title}}</li> <!--Angular Directive! //This is an angular 'for each' loop.  This is going to repeat this <li> for every movie in movieList and print the title-->
+    </ul>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

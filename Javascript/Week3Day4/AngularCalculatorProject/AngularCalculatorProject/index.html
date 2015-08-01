@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CalcApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="CalcController as vm">
+    <h2>Please enter two numbers</h2>
+    <div>
+        <label>
+            First Number:
+            <input ng-model="vm.num1" />
+        </label>
+        <label>
+            Second Number:
+            <input ng-model="vm.num2" />
+        </label>
+
+        <button ng-click="vm.add()">Add</button>
+    </div>
+    <div>{{vm.result}}</div>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
